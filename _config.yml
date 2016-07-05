@@ -12,21 +12,19 @@ pygments: true
 
 # 作者信息
 author: 
-  name: 高扬
-  email: gycoderhh@gmail.com
-  link: http://blademastercoder.github.io/
+  name: Poplar
+  email: atfeng2011@qq.com
+  link: http://w-poplar.github.io/
   weibo: http://weibo.com/u/2344559062
-  github: https://github.com/BladeMasterCoder
-  github_username:  BladeMasterCoder
-  weibo_username:  BladeMasterCoder
+  github: https://github.com/w-poplar
+  github_username:  w-poplar
+  weibo_username:  somanywf
 
 # 站点信息
-title : 恒星的恒心
+title : 聚木成林
 description: 
-  一不小心迈入计算机行业，在程序猿的道路上艰难地前行，目标是成
-  为一名优秀的全栈工程师或者说资深码农。对很多东西都充满兴趣，
-  跑步游泳，近期目标是能跑半程马拉松，学会自由泳。
-url: http://blademastercoder.github.io/
+  码农待开发...
+url: http://w-poplar.github.io/
 rss_url: /feed.xml
 
 # gavatar头像及Favicon

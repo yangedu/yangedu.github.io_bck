@@ -62,16 +62,12 @@ permalink: /pages/about.html
 	<hr>
 	<table class="table table-striped">
 		<tr>
-			<td>姓  名：</td>    
-			<td>高  扬 （1991）</td>
-		</tr>
-		<tr>
-			<td>学  历：</td>    
-			<td>研究生</td>
+			<td>昵称：</td>
+			<td>poplar （1991）</td>
 		</tr>
 		<tr>
 			<td>学  校：</td>    
-			<td>南京大学计算机科学技术系</td>
+			<td>SDUT-计算机科学技术系</td>
 		</tr>
 	</table>
 
@@ -84,7 +80,7 @@ permalink: /pages/about.html
 				Email：
 			</td>  
 			<td>
-				gycoderhh@gmail.com			
+				atfeng2011@qq.com
 			</td>
 		</tr>
 
@@ -93,7 +89,7 @@ permalink: /pages/about.html
 				github：
 			</td>  
 			<td>
-				<a href="{{ site.author.github }}" target="_blank">github.com/BladeMasterCoder</a>
+				<a href="{{ site.author.github }}" target="_blank">github.com/w-poplar</a>
 			</td>  
 		</tr>
 

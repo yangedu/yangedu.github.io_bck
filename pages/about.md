@@ -20,9 +20,6 @@ permalink: /pages/about.html
 	<br>
     <div class="skills">
    	<div id="main" style="height:400px"></div>
-
-
-
     <!--
         <div class="skillbar clearfix" data-percent="80%">
             <div class="skillbar-title"><span>Java</span></div>
@@ -63,11 +60,11 @@ permalink: /pages/about.html
 	<table class="table table-striped">
 		<tr>
 			<td>昵称：</td>
-			<td>poplar （1991）</td>
+			<td>poplar</td>
 		</tr>
 		<tr>
 			<td>学  校：</td>    
-			<td>SDUT-计算机科学技术系</td>
+			<td>SDUT</td>
 		</tr>
 	</table>
 
@@ -98,7 +95,7 @@ permalink: /pages/about.html
 				微博：
 			</td> 
 			<td>
-				<a href="{{ site.author.weibo }}" target="_blank">weibo.com/u/2344559062</a>
+				<a href="{{ site.author.weibo }}" target="_blank">http://weibo.com/u/1640376507</a>
 			</td> 
 		</tr>
 	</table>
@@ -109,7 +106,7 @@ permalink: /pages/about.html
 	<hr>
 	<br>
 	<p>
-	在校学生，一只码农，喜欢跑步，经常游泳，立志要为彰显码农正面形象做出贡献。
+	一枚码农，喜欢跑步，立志要为彰显码农正面形象做出贡献。
 	</p>
 	<br>
 

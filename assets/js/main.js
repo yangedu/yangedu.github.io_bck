@@ -173,19 +173,16 @@ function pjax_loadChart(){
 				            radius : '55%',
 				            center: ['50%', '60%'],
 				            data:[
-				                {value:90, name:'java'},
+				                {value:60, name:'php'},
 				                {value:60, name:'javascript'},
-				                {value:65, name:'html'},
-				                {value:65, name:'css'},
-				                {value:70, name:'c++'},
-				                {value:60, name:'data mining'}
+				                {value:60, name:'html'},
+				                {value:60, name:'css'},
+				                {value:60, name:'ps'},
+				                {value:60, name:'sql'}
 				            ]
 				        }
 				    ]
 				};
-                    
-                    
-        
                 // 为echarts对象加载数据 
                 myChart.setOption(option); 
             }

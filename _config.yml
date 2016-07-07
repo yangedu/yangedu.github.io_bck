@@ -14,17 +14,17 @@ pygments: true
 author: 
   name: Poplar
   email: atfeng2011@qq.com
-  link: http://w-poplar.github.io/
+  link: http://yangedu.github.io/
   weibo: http://weibo.com/u/1640376507
-  github: https://github.com/w-poplar
-  github_username:  w-poplar
+  github: https://github.com/yangedu
+  github_username:  yangedu
   weibo_username:  somanywf
 
 # 站点信息
 title : 聚木成林
 description: 
   码农待开发...
-url: http://w-poplar.github.io/
+url: http://yangedu.github.io/
 rss_url: /feed.xml
 
 # gavatar头像及Favicon

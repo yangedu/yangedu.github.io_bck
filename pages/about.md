@@ -86,7 +86,7 @@ permalink: /pages/about.html
 				github：
 			</td>  
 			<td>
-				<a href="{{ site.author.github }}" target="_blank">github.com/w-poplar</a>
+				<a href="{{ site.author.github }}" target="_blank">github.com/yangedu</a>
 			</td>  
 		</tr>
 

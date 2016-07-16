@@ -15,9 +15,9 @@ description: 多版本库并行，实现一个代码多个地方并存，保证�
 这个也是在别人有先例的基础上做的  
 1. 在github上创建版本库。  
 2. 在开源中国导入该版本库。（导入之后你可以做些调整，我就把这个库变成了私有）  
-3. 在本地先clone下来github的库。
+3. 在本地先clone下来github的库。  
 4. 先复制一下开源中国上的库地址，如果是你自己的电脑，建议使用ssh格式的，那样就不用每次提交时输入帐号密码了，如果是公共的，可以使用https格式的。  
-5. 在库文件夹中打开git,增加新的远程库地址  `git remote add origin-os [库地址]`
+5. 在库文件夹中打开git,增加新的远程库地址  `git remote add origin-os [库地址]`  
 6. 最后一步就是更新的时候更新两个库就可以了，我现在用的笨法子，先在编辑器中通过界面提交到github的版本库，然后在文件夹中打开git,手动push 到开源中国上。当然也可以全部通过git提交。执行的两个操作是：  
  `git push origin master`  
  `git push origin-os master`  
@@ -30,4 +30,5 @@ description: 多版本库并行，实现一个代码多个地方并存，保证�
 
 ### 选张图床上的摄影结束吧
 现在打算使用网易的lofter.com来做图床，不知道后期会有啥潜在的问题，阿门~  
-![自来也，纲手姬，大蛇丸](http://imglf0.nosdn.127.net/img/Wk9RdWc3UUVnQWI3ZVkrSnd3TW5zZFpLMWkrYlpEK2RGR2gzbmVPbE1JRUhJKzBZS2ZkMDd3PT0.jpg?imageView&thumbnail=1680x0&quality=96&stripmeta=0&type=jpg)
+![自来也，纲手姬，大蛇丸](http://imglf0.nosdn.127.net/img/Wk9RdWc3UUVnQWI3ZVkrSnd3TW5zZFpLMWkrYlpEK2RGR2gzbmVPbE1JRUhJKzBZS2ZkMDd3PT0.jpg?imageView&thumbnail=1680x0&quality=96&stripmeta=0&type=jpg)  
+![dota2](http://imglf0.nosdn.127.net/img/VFNNRXpSdUdncmZiTEd6MkZlOWxrWWlQbldPTUdGbDlXUSt2YmdweDExb0VGMWsxeEc2Ty9RPT0.gif)

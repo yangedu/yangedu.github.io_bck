@@ -21,7 +21,8 @@ description: 多版本库并行，实现一个代码多个地方并存，保证�
 6. 最后一步就是更新的时候更新两个库就可以了，我现在用的笨法子，先在编辑器中通过界面提交到github的版本库，然后在文件夹中打开git,手动push 到开源中国上。当然也可以全部通过git提交。执行的两个操作是：  
  `git push origin master`  
  `git push origin-os master`  
-7. 在搜到的一位高人，他有说创建一个脚本p,p的内容就是上面的两次提交，然后执行p就可以了，`chmod +x p & p` ,可惜我知识水平有限，暂时无法创建他说的脚本和执行。来源：[开源项目中如何同时支持Git@OSC和Github](http://my.oschina.net/apdplat/blog/415849 "开源项目中如何同时支持Git@OSC和Github")  
+7. 拉取远程版本库方法，默认的是 `git pull` 是默认拉取github的版本库（也可以`git pull origin master`),但是拉取另外一个开源中国上的就要写全了，`git pull origin-os master`。如果仅仅拉取远程库(`git pull origin-os`)则不成功。  
+8. 在搜到的一位高人，他有说创建一个脚本p,p的内容就是上面的两次提交，然后执行p就可以了，`chmod +x p & p` ,可惜我知识水平有限，暂时无法创建他说的脚本和执行。来源：[开源项目中如何同时支持Git@OSC和Github](http://my.oschina.net/apdplat/blog/415849 "开源项目中如何同时支持Git@OSC和Github")  
 
 ### 结语  
 1. 好像就是创建不同的远程库，然后提交两次

@@ -32,4 +32,4 @@ description: 多版本库并行，实现一个代码多个地方并存，保证�
 ### 选张图床上的摄影结束吧
 现在打算使用网易的lofter.com来做图床，不知道后期会有啥潜在的问题，阿门~  
 ![自来也，纲手姬，大蛇丸](http://imglf0.nosdn.127.net/img/Wk9RdWc3UUVnQWI3ZVkrSnd3TW5zZFpLMWkrYlpEK2RGR2gzbmVPbE1JRUhJKzBZS2ZkMDd3PT0.jpg?imageView&thumbnail=1680x0&quality=96&stripmeta=0&type=jpg)  
-![dota2](http://imglf0.nosdn.127.net/img/VFNNRXpSdUdncmZiTEd6MkZlOWxrWWlQbldPTUdGbDlXUSt2YmdweDExb0VGMWsxeEc2Ty9RPT0.gif)
+![dota2](http://imglf2.nosdn.127.net/img/VFNNRXpSdUdncmVqYitaVkxsRU9QaDFiM1lBTFY4RDhOc2k5T3NkMENTNURqSmhBYmQ4NElRPT0.gif)

@@ -23,15 +23,15 @@ description: 在CI的框架上给后台添加上简单的权限分配功能
 ## 步骤  
 使用的框架是 CodeIgniter 2.x，是在一个很厉害的同事二次开发的基础上再做添加。  
 现在已经有管理员(数据表，操作文件），操作按钮(配置文件)。  
-> 1. 操作按钮里增加权限id信息。  
-> 配置文件放置在application/config/admin_menu.php文件  
-> ` 
-> 前台模版引用  $controller->config->load('admin_menu');   
-> 获取按钮变量  $menu = $controller->config->item('menu');   
-> `   
-> 获取权限，匹配是否显示该按钮。  
-> 2. 增加权限组表。id,name,limit。   
-> 3. 增加管理员归属权限的字段type。   
+>  1. 操作按钮里增加权限id信息。  
+>  配置文件放置在application/config/admin_menu.php文件  
+>  ` 
+>  前台模版引用  $controller->config->load('admin_menu');   
+>  获取按钮变量  $menu = $controller->config->item('menu');   
+>  `   
+>  获取权限，匹配是否显示该按钮。  
+>  2. 增加权限组表。id,name,limit。   
+>  3. 增加管理员归属权限的字段type。   
 
 通过2和3，增加权限组和管理员关联功能。  
 
@@ -47,6 +47,4 @@ description: 在CI的框架上给后台添加上简单的权限分配功能
 总觉得有些要完善的地方，下步慢慢的完善吧。
 
 ## 人丑就该多读书  
-<embed src="http://player.youku.com/player.php/sid/XNTE2NTkwMDU2/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
- 
- 
+<center><embed src="http://player.youku.com/player.php/sid/XNTE2NTkwMDU2/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed></center>

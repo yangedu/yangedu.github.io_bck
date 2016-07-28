@@ -51,4 +51,4 @@ description: 在CI的框架上给后台添加上简单的权限分配功能
 总觉得有些要完善的地方，下步慢慢的完善吧。
 
 ## 人丑就该多读书  
-<center><embed src="http://player.youku.com/player.php/sid/XNTE2NTkwMDU2/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed></center>
+<center><embed src="http://player.youku.com/player.php/sid/XNTE2NTkwMDU2/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></center>

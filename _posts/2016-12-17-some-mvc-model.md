@@ -24,8 +24,7 @@ ecshop和百家cms，不是mvc架构方式的，访问他们的文件，通过�
 简单的看了下，就简单的记录下自己的认识。
 ### dota2 7.0 新游记
 哈哈哈，从零几年开始的6.x版本在前几天终于换了7.0了，冰蛙大神和v社这个做的精细程度简直了！
-（岂能是小学生游戏能比的）（当然入手程度也是没法和小学生游戏比）
+（岂能是小学生游戏能比的）（当然入手程度也是没法和小学生游戏比）  
 
-![Dota2 7.0 齐天大圣新游记]  
 
-(http://imglf1.nosdn.127.net/img/Wk9RdWc3UUVnQWFKODdZdkc4MlpNRHBMaXovOVRFempNM3loblhDWFM0dCtKMkY3SzFkdFB3PT0.jpg?imageView&thumbnail=500x0&quality=96&stripmeta=0&type=jpg) 
+![自来也，纲手姬，大蛇丸](http://imglf1.nosdn.127.net/img/Wk9RdWc3UUVnQWFKODdZdkc4MlpNRHBMaXovOVRFempNM3loblhDWFM0dCtKMkY3SzFkdFB3PT0.jpg?imageView&thumbnail=500x0&quality=96&stripmeta=0&type=jpg)

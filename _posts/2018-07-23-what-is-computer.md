@@ -1,9 +1,11 @@
+---
 layout: 
 post title: 这是电脑吗？
 category: 生活
 tags: 适应新环境
 keywords: 新世界
 description: 学着用这个高科技的东西，慢慢变得更好
+---
 
 ### 新世界  
 今天刚开用，尼玛这几个字用了大概半小时的操作!   

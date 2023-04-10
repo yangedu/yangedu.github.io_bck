@@ -1,107 +1,70 @@
+---
+layout: compress
+# Default layout
+---
+
 <!DOCTYPE html>
-<html>
+
+{% include assets-origin.html %}
+
+{% capture prefer_mode %}
+  {% if site.theme_mode %}
+    data-mode="{{ site.theme_mode }}"
+  {% endif %}
+{% endcapture %}
+
+<!-- `site.alt_lang` can specify a language different from the UI -->
+<html lang="{{ site.alt_lang | default: site.lang }}"{{ prefer_mode }}>
 
   {% include head.html %}
 
-  <body>
+  <body data-topbar-visible="true">
 
-    {% include header.html %}
-      
-    <div class="content">
-   	<div class="container">	
-   		<div class="row">  		
-   		
-			<div class="col-md-3 col-lg-3 hidden-xs hidden-sm aside1 fadein-left">
-				<div class="profile box-shadow center">
-					<div class="overlay"></div>
-					<div class="center gavatar">
-						<a href="/" class="profile_gavatar"><img class="circle" src="{{ site.gavatar }}"></a>
-					</div>
-					<div class="address">
-						<h5><span class="fa fa-map-marker"></span> JiNan ShanDong, China</h5>
-					</div>
-					<div class="center profile_desc">
-						{{ site.profile_desc }}
-					</div>
-				</div>
-				
-				<div class="tag-cloud-text">
-					<a href="http://w-poplar.github.io/pages/tags.html" title="标签" class="pjaxlink"><p class="center">标签</p></a>
-				</div>
-				<div class="tag-cloud ">	
-					<hr>
-					<div class="page-tag">
-							{% for tag in site.tags %}
-								<a href="http://blog.abcmumu.com/pages/tags.html#{{tag[0]}}" name="{{tag[0]}}" class="pjaxlink"><i class="fa fa-tags"></i>{{ tag[0] }}({{tag[1].size}})</a>
-							{% endfor %}
-					</div>					
-				</div>
-				<div class="clear"></div>
+    {% include sidebar.html %}
 
-				<div class="recentcome box-shadow">
-	 				<p>最近访客 <i class="fa fa-user"></i></p>
-	 				<ul class="ds-recent-visitors" data-num-items="15"></ul>
-	 			</div>
-	 			<div class="comment box-shadow">
-	 				<p>最新评论 <i class="fa fa-comments"></i></p>
-	 				<dl class="ds-recent-comments"  data-num-items="5" data-show-avatars="1" data-show-time="1" data-show-title="1"  data-show-admin="1" data-excerpt-length="50"></dl>
-	 			</div>
+    {% include topbar.html %}
 
-	 			
-	 			<div class="recentuse">
-	 					<p>常用链接</p>
-	 					<hr>
-	 					<ul>
-		 					<li><a href = "http://oschina.net/" title="开源中国" target="_blank">开源中国</a></li>
-		 					<li><a href = "https://github.com/" title="github" target="_blank">github主页</a></li>
-	 					</ul>
-	 			</div>
-				
-				<!--<div class="friendlink">
-	 					<p>好友</p>
-	 					<hr>
-	 			</div>-->
-				<div class="friendlink">
-					<p>友情链接</p>
-					<hr>
-					<ul>
-						<li><a href="http://www.bootcss.com" target="_blank" title="Bootstrap中文网">Bootstrap中文网</a></li>
-					</ul>
-					<p>优秀资源</p>
-					<hr>
-					<ul>
-						<li><a href="http://www.discuz.net" target="_blank" title="discuz">Discuz</a></li>
-						<li><a href="http://codeigniter.org.cn/" target="_blank" title="CI框架">CI框架</a></li>
-						<li><a href="http://www.thinkphp.cn" target="_blank" title="TP框架">TP框架</a></li>
-					</ul>
-				</div>
-				
-			</div>
-			
-			<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 box-shadow fadein-right aside2">					 		
-					<div class="page-content" id="pjax">{{content}}</div>				
-			</div>
-			
+    <div id="main-wrapper" class="d-flex justify-content-center">
+      <div id="main" class="container pl-xl-4 pr-xl-4">
+        {{ content }}
+      </div>
 
+      {% include search-results.html %}
 
- 		</div>	
-	</div>
-    </div>
-    
-	
-	<div class="profile_social">
-		<a class="rss" href="{{ site.rss_url }}" target="_blank"></a>
-		<a class="github" href="{{ site.author.github }}"  target="_blank"></a>
-		<a class="weibo" href="{{ site.author.weibo }}"  target="_blank"></a>
-	</div>
-	
-    <div id="backtotop">
-    		<a href="#"><i class="fa fa-arrow-circle-up"></i></a>
-    </div>
-    
-    <div class="pjax_loading"></div>
-    
+    </div> <!-- #main-wrapper -->
+
     {% include footer.html %}
+
+    {% if page.mermaid %}
+      {% include mermaid.html %}
+    {% endif %}
+
+    <div id="mask"></div>
+
+    <a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    {% if site.pwa.enabled %}
+      <div id="notification" class="toast" role="alert" aria-live="assertive" aria-atomic="true"
+        data-animation="true" data-autohide="false">
+        <div class="toast-header">
+          <button type="button" class="ml-2 ml-auto close" data-dismiss="toast" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="toast-body text-center pt-0">
+          <p class="pl-2 pr-2 mb-3">{{ site.data.locales[site.lang].notification.update_found }}</p>
+          <button type="button" class="btn btn-primary" aria-label="Update">
+            {{ site.data.locales[site.lang].notification.update }}
+          </button>
+        </div>
+      </div>
+    {% endif %}
+
+    {% include search-loader.html %}
+
+    {% include js-selector.html %}
 
   </body>
 

@@ -1,69 +1,36 @@
-<footer class="site-footer">
+<!-- The Footer -->
 
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title }}'s blog</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col  footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col  footer-col-2">
-        <ul class="social-media-list">
-          {% if site.author.github%}
-          <li>
-            <a class="github" href="{{ site.author.github }}"  target="_blank"></a>
-          </li>
+<footer>
+  <div class="container pl-lg-4 pr-lg-4">
+    <div class="d-flex justify-content-between align-items-center text-muted ml-md-3 mr-md-3">
+      <div class="footer-left">
+        <p class="mb-0">
+          © {{ 'now' | date: "%Y" }}
+          <a href="{{ site.social.links[0] }}">{{ site.social.name }}</a>.
+          {% if site.data.locales[site.lang].copyright.brief %}
+          <span data-toggle="tooltip" data-placement="top"
+            title="{{ site.data.locales[site.lang].copyright.verbose }}">{{ site.data.locales[site.lang].copyright.brief }}</span>
           {% endif %}
-
-          {% if site.author.weibo %}
-          <li>
-            <a class="weibo" href="{{ site.author.weibo }}"  target="_blank"></a>
-          </li>
-          {% endif %}
-        </ul>
+        </p>
       </div>
 
-      <div class="footer-col  footer-col-3">
-        <p class="text">{{ site.description }}</p>
+      <div class="footer-right">
+        <p class="mb-0">
+
+          {%- capture _platform -%}
+          <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a>
+          {%- endcapture -%}
+
+          {%- capture _theme -%}
+          <a href="https://github.com/cotes2020/jekyll-theme-chirpy" target="_blank" rel="noopener">Chirpy</a>
+          {%- endcapture -%}
+
+          {{ site.data.locales[site.lang].meta
+            | default: 'Using the :PLATFORM theme :THEME.'
+            | replace: ':PLATFORM', _platform | replace: ':THEME', _theme
+          }}
+        </p>
       </div>
-    </div>
-    <div class="center sitedesc">
-    	Powered by <a href ="http://jekyllrb.com/">Jekyll</a>  |  © 2016 Poplar  |  Hosted on <a href="https://github.com/{{ site.author.github_username }}/{{ site.author.github_username }}.github.io"> Github</a> <script src="https://s13.cnzz.com/z_stat.php?id=3996009&web_id=3996009" language="JavaScript"></script>
     </div>
   </div>
-
-<!--搜索引擎-->
-  <script type="text/javascript">
-    (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
-              (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
-      e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
-    })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
-
-    _st('install','-6bZhZ8MPDs31ixCiETk','2.0.0');
-  </script>
-  <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        TeX: {equationNumbers: {
-            autoNumber: ["AMS"], useLabelIds: true}},
-            "HTML-CSS": {linebreaks: {automatic: true}},
-            SVG: {linebreaks: {automatic: true}}
-    });
-   </script>
-
-  <script type="text/javascript" src="/assets/js/jquery.js"></script>
-  <script type="text/javascript" src="/assets/js/bootstrap.js"></script>
-  <script type="text/javascript" src="/assets/js/jquery.pjax.js"></script> 
-  <script type="text/javascript" src="/assets/js/echarts.js"></script> 
-  <script type="text/javascript" src="/assets/js/prettify/prettify.js"></script>
-  <script type="text/javascript" src="/assets/js/stickUp.min.js"></script>
-  <script type="text/javascript" src="/assets/js/fancybox/jquery.fancybox.pack.js"></script>
-  <script type="text/javascript" src="/assets/js/fancybox/jquery.mousewheel-3.0.6.pack.js"></script>
-  <script type="text/javascript" src="/assets/js/main.js"></script>
-  <link rel="stylesheet" href="{{ "/assets/css/duoshuo.css" | prepend: site.baseurl }}"> 
-  
 </footer>

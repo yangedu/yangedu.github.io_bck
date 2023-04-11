@@ -1,66 +1,22 @@
-<<<<<<< HEAD
-_site/
-_drafts/
-.DS_Store
-.idea/
-=======
-*.class
+# Bundler cache
+.bundle
+vendor
+Gemfile.lock
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+# Jekyll cache
+.jekyll-cache
+_site
 
-# Package Files #
-*.jar
-*.war
-*.ear
+# RubyGems
+*.gem
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+# NPM dependencies
+node_modules
+package-lock.json
 
-# =========================
-# Operating System Files
-# =========================
+# IDE configurations
+.idea
+.vscode
 
-# OSX
-# =========================
-
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Thumbnails
-._*
-
-# Files that might appear on external disk
-.Spotlight-V100
-.Trashes
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
-
-# Windows
-# =========================
-
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
-
-# Folder config file
-Desktop.ini
-
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
-
-# Windows shortcuts
-*.lnk
->>>>>>> origin/master
+# Misc
+assets/js/dist
